@@ -1,6 +1,8 @@
 #ifndef PERSON_H
 #define PERSON_H
 #include <string>
+#include <iostream>
+
 using namespace std;
 
 class Person{
@@ -11,6 +13,9 @@ public:
     void haveBirthday();
     int getAge(){ return age; }
     string getName() {return name; }
+    ~Person(){
+        cout << "Destructing person" << endl;
+    }
 };
 
 #endif
