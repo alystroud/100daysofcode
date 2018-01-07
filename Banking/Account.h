@@ -11,6 +11,7 @@ class Account{
     double balance;
 
 public:
+    Account();
     Account(long id, string name, double openingbalance);
     double getBalance() { return balance; }
     void deposit(double depositAmount);

@@ -1,5 +1,7 @@
 #include "Account.h"
 
+Account::Account(){}
+
 Account::Account(long idNumber, string name, double openingbalance){
     id = idNumber;
     accountName = name;
