@@ -16,6 +16,7 @@ public:
     double getBalance() { return balance; }
     void deposit(double depositAmount);
     bool withdrawal(double withdrawalAmount);
+    string getName() { return accountName; }
     ~Account(){
         cout << "Destroying " << accountName << " account." << endl;
     }

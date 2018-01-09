@@ -12,6 +12,9 @@ class User {
 public:
     User(long id, string name);
     void createAccount(long id, string name, double openingbalance);
+    void deposit(double depositAmount);
+    void withdraw(double withdraw);
+    
     ~User(){
         cout << "Deleting " << name << " account." << endl;
     }
