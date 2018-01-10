@@ -1,9 +1,12 @@
 #include "User.h"
 
-User::User(long userid, string username) {
+User::User(long userid, string fullname, string uname, string pword) {
     cout << "Creating user " << username << endl;
     id = userid;
-    name = username;
+    name = fullname;
+    username = uname;
+    password = pword;
+    
 }
 
 void User::createAccount(long id, string name, double openingbalance) {
@@ -26,4 +29,8 @@ void User::withdraw(double withdrawAmount) {
             cout << "New balance: £" << account->getBalance() << endl;
         }
     }
+}
+
+bool User::login(string uname, string pword) {
+    return ( uname == username && pword == password);
 }
