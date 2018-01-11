@@ -34,3 +34,7 @@ void User::withdraw(double withdrawAmount) {
 bool User::login(string uname, string pword) {
     return ( uname == username && pword == password);
 }
+
+double User::getBalance(){
+    return account->getBalance();
+}
